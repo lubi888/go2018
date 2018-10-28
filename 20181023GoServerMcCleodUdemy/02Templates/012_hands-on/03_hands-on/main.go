@@ -1,18 +1,18 @@
 package main
 
 import (
-	"text/template"
-	"os"
 	"log"
+	"os"
+	"text/template"
 )
 
 type hotel struct {
 	Name, Address, City, Region string
-	Zip int
+	Zip                         int
 }
 
 type region struct {
-	hotels []hotel
+	hotels                      []hotel
 	Northern, Central, Southern string
 }
 
@@ -22,18 +22,16 @@ type caliornia struct {
 
 var tpl *template.Template
 
-func init()  {
+func init() {
 	tpl = template.Must(template.ParseFiles("tpl.gohtml"))
 }
 
 func main() {
 	///californias := []caliornia{
 
-		err := tpl.Execute(os.Stdout, californias)
+	err := tpl.Execute(os.Stdout, californias)
 	if err != nil {
 		log.Fataln(err)
 	}
 
-	}
-
-
+}

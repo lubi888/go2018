@@ -8,15 +8,15 @@ import (
 )
 
 func main() {
-	tpl, err := template.ParseFiles( "one.gmao")
+	tpl, err := template.ParseFiles("one.gmao")
 	if err != nil {
 		log.Fatalln(err)
 	}
 
-	err = tpl.Execute(os.Stdout, nil,)
+	err = tpl.Execute(os.Stdout, nil)
 	if err != nil {
 		log.Fatalln(err)
-	}else {
+	} else {
 		fmt.Println()
 	}
 

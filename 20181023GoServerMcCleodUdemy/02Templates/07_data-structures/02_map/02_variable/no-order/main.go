@@ -11,7 +11,7 @@ func main() {
 		"America":  "MLK",
 		"Meditate": "Buddha",
 		"Love":     "Jesus",
-}
+	}
 
 	for k, v := range sages {
 		fmt.Println(k, " - ", v)

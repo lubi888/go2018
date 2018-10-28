@@ -14,7 +14,7 @@ func init() {
 
 func main() {
 
-	sages := []string{"Ganesh", "Buddha", "Jesus",}
+	sages := []string{"Ganesh", "Buddha", "Jesus"}
 
 	err := tpl.Execute(os.Stdout, sages)
 	if err != nil {

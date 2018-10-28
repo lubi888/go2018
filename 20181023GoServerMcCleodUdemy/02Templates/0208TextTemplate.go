@@ -19,7 +19,6 @@ func main() {
 	//}
 	//defer nf.Close()
 
-
 	err = tpl.Execute(os.Stdout, nil)
 	if err != nil {
 		log.Fatalln(err)

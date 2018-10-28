@@ -24,15 +24,12 @@ func main() {
 		Motto: "The belief of no beliefs",
 	}
 
-
-
 	jesus := sage{
 		Name:  "Jesus",
 		Motto: "Love all",
 	}
 
-
-	sages := []sage{buddha, jesus,}
+	sages := []sage{buddha, jesus}
 
 	err := tpl.Execute(os.Stdout, sages)
 	if err != nil {

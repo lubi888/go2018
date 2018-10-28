@@ -1,9 +1,9 @@
 package main
 
 import (
-"log"
-"os"
-"text/template"
+	"log"
+	"os"
+	"text/template"
 )
 
 var tpl *template.Template
@@ -18,9 +18,8 @@ func main() {
 	//	log.Fatalln(err)
 	//}
 
-
 	//err:= tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", 42)
-	err:= tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", "release self focus, embracce other focus, etc")
+	err := tpl.ExecuteTemplate(os.Stdout, "tpl.gohtml", "release self focus, embracce other focus, etc")
 
 	if err != nil {
 		log.Fatalln(err)

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>resta</title>
+</head>
+<body>
+{{.}}
+
+<br>
+{{range .}}
+        {{.ResName}}<br>
+        {{range .Menus}}
+                {{.Breakfast}} is for breakfast<br>
+                {{.Lunch}} is for lunch<br>
+                {{.Dinner}} is for dinner<br>
+        {{end}}
+{{end}}
+
+</body>
+</html>

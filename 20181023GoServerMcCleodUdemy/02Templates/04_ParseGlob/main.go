@@ -5,13 +5,13 @@ import (
 	"os"
 	"text/template"
 )
+
 //pointer to template
 var tpl *template.Template
 
-func init()  {
+func init() {
 	tpl = template.Must(template.ParseGlob("templates/*"))
 }
-
 
 func main() {
 	tpl, err := template.ParseGlob("templates/*")
