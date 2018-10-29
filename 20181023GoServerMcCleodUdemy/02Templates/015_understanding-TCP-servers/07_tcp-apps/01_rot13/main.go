@@ -22,7 +22,7 @@ func main() {
 			continue
 		}
 		go handle(conn)
-	}  	 
+	}
 }
 
 func handle(conn net.Conn) {
