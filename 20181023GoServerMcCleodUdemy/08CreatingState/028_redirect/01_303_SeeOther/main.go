@@ -21,7 +21,7 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, req *http.Request) {
-	fmt.Print("Your request method at foo: ", req.Method, "\n\n")
+	fmt.Print("Your request method at foo: ", req.Method,"\n\n", req.Header,"\n\n", req.Body,"\n\n")
 }
 
 func bar(w http.ResponseWriter, req *http.Request) {
