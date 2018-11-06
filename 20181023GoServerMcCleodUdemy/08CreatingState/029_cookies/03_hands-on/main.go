@@ -24,7 +24,7 @@ func set(w http.ResponseWriter, req *http.Request) {
 	c += 1
 	http.SetCookie(w, &http.Cookie{
 		Name:  "my-cookie",
-		Value: "value"+string(c),   //not working "
+		Value: "value" + string(c), //not working file downloaded  "value"+cString also not working
 	})
 	fmt.Fprintln(w, "COOKIE WRITTEN - CHECK YOUR BROWSER")
 	fmt.Fprintln(w, "in chrome go to: dev tools / application / cookies")

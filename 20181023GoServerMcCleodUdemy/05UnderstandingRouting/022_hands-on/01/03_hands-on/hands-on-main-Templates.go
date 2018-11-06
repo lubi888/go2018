@@ -8,28 +8,27 @@ import (
 	//"io"
 )
 
-func a(w http.ResponseWriter, req *http.Request){
+func a(w http.ResponseWriter, req *http.Request) {
 	io.WriteString(w, "this is alpha")
 }
 
-func d(w http.ResponseWriter, req *http.Request)  {
+func d(w http.ResponseWriter, req *http.Request) {
 	io.WriteString(w, "This is beta, dog	")
 }
 
-func me1(w http.ResponseWriter, req *http.Request)  {
+func me1(w http.ResponseWriter, req *http.Request) {
 	//io.WriteString(w, "hi , my name is : ")
-	tpl, err:= template.ParseFiles("data.gohtml")
-	if err != nil{
+	tpl, err := template.ParseFiles("data.gohtml")
+	if err != nil {
 		log.Fatalln(err)
 	}
-	err = tpl.ExecuteTemplate(w,"data.gohtml", "tabby")
+	err = tpl.ExecuteTemplate(w, "data.gohtml", "tabby")
 	if err != nil {
 		log.Fatalln("errors", err)
 	}
 }
 
 //var tpl *template.Template
-
 
 //func init() {
 //	template.Must(template.ParseFiles("data.gohtml"))

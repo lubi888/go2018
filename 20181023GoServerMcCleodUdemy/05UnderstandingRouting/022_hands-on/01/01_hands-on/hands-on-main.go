@@ -5,15 +5,15 @@ import (
 	"net/http"
 )
 
-func a(w http.ResponseWriter, req *http.Request){
+func a(w http.ResponseWriter, req *http.Request) {
 	io.WriteString(w, "this is alpha")
 }
 
-func d(w http.ResponseWriter, req *http.Request)  {
+func d(w http.ResponseWriter, req *http.Request) {
 	io.WriteString(w, "This is beta, dog	")
 }
 
-func me1(w http.ResponseWriter, req *http.Request)  {
+func me1(w http.ResponseWriter, req *http.Request) {
 	io.WriteString(w, "hi , my name is : ")
 }
 func main() {

@@ -10,6 +10,13 @@
 USER NAME {{.UserName}}<br>
 FIRST {{.First}}<br>
 LAST {{.Last}}<br>
+<strike>       Pwd {{.Password}} strikethrough<br></strike>
+        <code>       Pwd {{.Password}} code<br></code>
+        <del>       Pwd {{.Password}} del<br></del>
+        <small>       Pwd {{.Password}} small<br></small>
+        <blockquote>       Pwd {{.Password}} blockquote<br></blockquote>
+        <dialog>       Pwd {{.Password}} dialog<br></dialog>
+</body>
 {{else}}
 <h2><a href="/signup">sign up</a></h2>
 {{end}}
