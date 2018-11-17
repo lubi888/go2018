@@ -34,7 +34,6 @@ func main() {
 	//for a := 0; a < len(deckRnum); a++ {
 		for i, s := range suitU {
 			for p, t := range number {
-
 				//			fmt.Print("\t", t, "\t", s)
 		//		deckRnum[a] += 1
 				deckR[s] += t
