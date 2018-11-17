@@ -13,12 +13,13 @@ var err error
 
 func main() {
 //	db, err = sql.Open("mysql", "awsuser:mypassword@tcp(mydbinstance.cakwl95bxza0.us-west-1.rds.amazonaws.com:3306)/test02?charset=utf8")
-		db, err = sql.Open("mysql", "awsuser:password@tcp(mydbinstance-go.cxcs214am8nx.us-east-1.rds.amazonaws.com:3306)/schema_test2?charset=utf8")	
+		db, err = sql.Open("mysql", "awsuser:password@tcp(mydbinstance.cxcs214am8nx.us-east-1.rds.amazonaws.com:3306)/test2?charset=utf8")
 	check(err)
 	defer db.Close()
 
 	err = db.Ping()
 	check(err)
+	if err == nil {fmt.Println("ping received, db found")
 
 	http.HandleFunc("/", index)
 	http.HandleFunc("/amigos", amigos)
