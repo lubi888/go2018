@@ -4,10 +4,12 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
+	//"unicode"
 )
 
 var suitU = [4]string{"\u2660", "\u2665", "\u2663", "\u2666"}
 var suitUW = [4]string{"&#9824;", "&#9829;", "&#9827;", "&#9830;"}
+var deckU = [3]string{"\U0001f0a1", "\U0001F0D1", "\U0001f0b8"}
 var number = [13]string{"ace", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 ", " 10 ", "jack", "queen", "king"}
 var tpl *template.Template
 var deckR = make(map[string]string)
@@ -48,5 +50,6 @@ func card(w http.ResponseWriter, r *http.Request) {
 
 func deck(w http.ResponseWriter, r *http.Request) {
 	//not working
-	tpl.ExecuteTemplate(w, "index.gohtml", deckR["ace"])
+	//tpl.ExecuteTemplate(w, "index.gohtml", deckR["ace"])
+	tpl.ExecuteTemplate(w, "index.gohtml", deckU)
 }
