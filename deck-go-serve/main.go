@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
-	//"unicode"
+	//"./deck-unicode.go"
 )
 
 var suitU = [4]string{"\u2660", "\u2665", "\u2663", "\u2666"}
@@ -48,8 +48,8 @@ func card(w http.ResponseWriter, r *http.Request) {
 	tpl.ExecuteTemplate(w, "index.gohtml", cf)
 }
 
-func deck(w http.ResponseWriter, r *http.Request) {
-	//not working
-	//tpl.ExecuteTemplate(w, "index.gohtml", deckR["ace"])
-	tpl.ExecuteTemplate(w, "index.gohtml", deckU)
-}
+//func deck(w http.ResponseWriter, r *http.Request) {
+//	//not working
+//	//tpl.ExecuteTemplate(w, "index.gohtml", deckR["ace"])
+//	tpl.ExecuteTemplate(w, "index.gohtml", a)
+//}
