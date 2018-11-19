@@ -1,43 +1,69 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	fmt.Println("try some arrays with unicode")
 	//127136 is card back	183 a joker
 	x := 127137 //ascii    decimal
 	a := []int{}
-	fmt.Println(len(a))                //0
-	for i := x; i <= 127198; i++ { 
+	fmt.Println(len(a)) //0
+	for i := x; i <= 127198; i++ {
 		a = append(a, i)
 	}
 	//need remove  151, 152, 167, 168, 183, 184,   14,15, 30, 31, 46,47
-	fmt.Println(len(a))	//original set unicode
+	fmt.Println(len(a)) //original set unicode
 	//remove blank cards and jokers
-	s:=14
-	t:=28
-	u:=42 
+	s := 14
+	t := 28
+	u := 42
 	//remove "C" card between J-Q
-	v:=11
-	w:=24
-	y:=37
-	z:=50
-	a = append(a[:s],a[s+2:]...)
-	a = append(a[:t],a[t+2:]...)	
-	a = append(a[:u],a[u+2:]...)	
-	a = append(a[:v],a[v+1:]...)	
-	a = append(a[:w],a[w+1:]...)	
-	a = append(a[:y],a[y+1:]...)	
-	a = append(a[:z],a[z+1:]...)	
-		
-	fmt.Println(len(a))  //length deck 52
-	//for z := 0; z < len(a); z++ {
-	//	fmt.Print(a[z], "\tdecimal & html ", z)
-	//	fmt.Printf("\t\t%#x\t%#U\n", a[z], a[z])
-	//}	
+	v := 11
+	w := 24
+	y := 37
+	z := 50
+	a = append(a[:s], a[s+2:]...)
+	a = append(a[:t], a[t+2:]...)
+	a = append(a[:u], a[u+2:]...)
+	a = append(a[:v], a[v+1:]...)
+	a = append(a[:w], a[w+1:]...)
+	a = append(a[:y], a[y+1:]...)
+	a = append(a[:z], a[z+1:]...)
+
+	fmt.Println(len(a)) //length deck 52
 	for z := 0; z < len(a); z++ {
-		fmt.Println(a[z])    //print a decimal
-		fmt.Printf("%U\n",a[z])  //print unicode num
-		fmt.Printf("%#U\n",a[z]) //print unicode num + character
+		fmt.Println(a[z])         //print a decimal   127194
+		fmt.Printf("%U\n", a[z])  //print unicode num  U+1F0DE
+		fmt.Printf("%#U\n", a[z]) //print unicode num + character    U+1F0DE '🃞'
+	}
+	fmt.Printf("%T\n", a[0])
+	h := a[0]
+	fmt.Println(h, "is h")
+	j := fmt.Sprintf("%U", h)
+	fmt.Println(j, "is j") //U+1F0A1
+	fmt.Printf("%T\n", j)
+	fmt.Println("\\U000"+j[2:], "and some") // Print \U000f554A
+	k := fmt.Sprint("\"\\U000" + j[2:] + "\"")
+	fmt.Println(k + " is also k") //"\U0001F0A1"
+	fmt.Println(k)
+	fmt.Println("\U0001F0A1 is just a number ")
+	p := fmt.Sprintf("%#U", h)
+	fmt.Println(p) //U+1F0A1 '🂡'
+	p1 := fmt.Sprint(p[9:])
+	fmt.Println(p1)
+	fmt.Println(a, "is a")
+	c := []string{}
+	fmt.Println(c, "empty c")
+	fmt.Println(len(c))
+	for z := 0; z <= 51; z++ {
+		t5 := fmt.Sprintf("%#U", a[z])
+		t6 := fmt.Sprint(t5[9:])
+		c = append(c, t6)
+	}
+	fmt.Print(c)
+	for z:=0; z < len(c); z++ {
+		fmt.Println(c[z])
 	}
 }

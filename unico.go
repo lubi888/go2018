@@ -28,7 +28,7 @@ func main() {
 	fmt.Printf("\U00013011\n")
 	fmt.Printf("\U00013012\n")
 	fmt.Println("\U00013015")
-	fmt.Println("\U0001342E")
+	fmt.Println("\U0001342E and then next ")
 	fmt.Printf("\360\223\200\200")
 	//fmt.Printf("\U0xF0 0x93 0x80 0x80")
 	//fmt.Printf("%#U\n", unicode.U+13000)
@@ -44,18 +44,16 @@ func main() {
 	//fmt.Printf("%#U\n", "U+13000") //	fmt.Printf("%#U\n", "U+13006")
 	//fmt.Printf("%#U\n", (T))
 	fmt.Printf("%#U\n", unicode.Ogham)
-	fmt.Printf("\u1685\n")
+	fmt.Printf("above is unicode.ogham \u1685\n")
 	fmt.Printf("\u1696\n")
 	//fmt.Printf("\unicode.Egyptian_Hieroglyphs.R16.13093\n")
 	//fmt.Printf("\unicode.Egyptian_Hieroglyphs.13093")
-	//fmt.Printf("\unicode.Egyptian_Hieroglyphs.13090\n")
+	//fmt.Printf("unicode.Egyptian_Hieroglyphs.13090")
 
-	//2018.10.05
-	//77824	decimal & html		0x13000	U+13000 '𓀀'
+	//2018.10.05   77824	decimal & html		0x13000	U+13000 '𓀀'
 	fmt.Println("try some arrays with unicode")
 	x := 77824 //ascii a
 	a := []int{}
-	//a := make([]int,1)
 	fmt.Println(len(a)) //0
 	for i := x; i <= 77824+1070; i++ { //1072 hiero set
 		a = append(a, i)
@@ -70,6 +68,14 @@ func main() {
 	}
 	for z := 0; z < len(a); z++ {
 		fmt.Printf("%#U", a[z])
+	}
+	//2018.11.18
+	for z := 0; z < len(a); z++ {
+		t:= fmt.Sprintf("%#U", a[z])
+		u4:= fmt.Sprint( t[9:])
+		//v4:= fmt.Sprint(u4[:1])  //try to remove single quote mark
+		fmt.Println(u4)
+		//fmt.Println(v4)
 	}
 }
 
