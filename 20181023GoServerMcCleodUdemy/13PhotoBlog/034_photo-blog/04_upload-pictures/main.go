@@ -1,7 +1,7 @@
 package main
 
 import (
-	"crypto/sha1"
+	sha1 "crypto/sha1"
 	"fmt"
 	"github.com/satori/go.uuid"
 	"html/template"
