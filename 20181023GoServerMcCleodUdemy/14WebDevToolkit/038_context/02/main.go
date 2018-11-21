@@ -32,7 +32,6 @@ func dbAccess(ctx context.Context) int {
 
 func bar(w http.ResponseWriter, req *http.Request) {
 	ctx := req.Context()
-
 	log.Println(ctx)
 	fmt.Fprintln(w, ctx)
 }

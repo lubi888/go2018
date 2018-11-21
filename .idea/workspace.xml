@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7325e5b5-5a24-4a10-af9e-77807db50490" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/01/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/01/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/02/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/02/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/03/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/03/main.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,32 +22,33 @@
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.7" value="2" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="8" />
+          <entry key="go" value="12" />
           <entry key="gohtml" value="1" />
           <entry key="jpg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="8" />
+          <entry key="Go" value="12" />
           <entry key="Go template" value="1" />
           <entry key="Image" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="1393" />
+          <entry key="go" value="1541" />
           <entry key="gohtml" value="121" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="1393" />
+          <entry key="Go" value="1541" />
           <entry key="Go template" value="121" />
         </counts>
       </usages-collector>
@@ -54,24 +57,46 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/public/pics/f382716c1600421f127c7414a072016434fcd43a.jpg">
-          <provider selected="true" editor-type-id="images" />
+        <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1104">
+              <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/main.go">
+        <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/05_display-pictures/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+            <state relative-caret-position="192">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/01/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/02/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/go/src/github.com/satori/go.uuid/generator.go">
+        <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/03/main.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="674">
-              <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+            <state relative-caret-position="288">
+              <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
             </state>
           </provider>
         </entry>
@@ -92,6 +117,8 @@
         <option value="$PROJECT_DIR$/deck-go-serve/templates/index.gohtml" />
         <option value="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/03_store-values/main.go" />
         <option value="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/main.go" />
+        <option value="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/01/main.go" />
+        <option value="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/02/main.go" />
       </list>
     </option>
   </component>
@@ -127,44 +154,42 @@
               <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="go2018" type="462c0819:PsiDirectoryNode" />
               <item name="20181023GoServerMcCleodUdemy" type="462c0819:PsiDirectoryNode" />
-              <item name="13PhotoBlog" type="462c0819:PsiDirectoryNode" />
+              <item name="14WebDevToolkit" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="go2018" type="462c0819:PsiDirectoryNode" />
               <item name="20181023GoServerMcCleodUdemy" type="462c0819:PsiDirectoryNode" />
-              <item name="13PhotoBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="034_photo-blog" type="462c0819:PsiDirectoryNode" />
+              <item name="14WebDevToolkit" type="462c0819:PsiDirectoryNode" />
+              <item name="038_context" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="go2018" type="462c0819:PsiDirectoryNode" />
               <item name="20181023GoServerMcCleodUdemy" type="462c0819:PsiDirectoryNode" />
-              <item name="13PhotoBlog" type="462c0819:PsiDirectoryNode" />
-              <item name="034_photo-blog" type="462c0819:PsiDirectoryNode" />
-              <item name="04_upload-pictures" type="462c0819:PsiDirectoryNode" />
+              <item name="14WebDevToolkit" type="462c0819:PsiDirectoryNode" />
+              <item name="038_context" type="462c0819:PsiDirectoryNode" />
+              <item name="01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go2018" type="462c0819:PsiDirectoryNode" />
+              <item name="20181023GoServerMcCleodUdemy" type="462c0819:PsiDirectoryNode" />
+              <item name="14WebDevToolkit" type="462c0819:PsiDirectoryNode" />
+              <item name="038_context" type="462c0819:PsiDirectoryNode" />
+              <item name="02" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
+              <item name="go2018" type="462c0819:PsiDirectoryNode" />
+              <item name="20181023GoServerMcCleodUdemy" type="462c0819:PsiDirectoryNode" />
+              <item name="14WebDevToolkit" type="462c0819:PsiDirectoryNode" />
+              <item name="038_context" type="462c0819:PsiDirectoryNode" />
+              <item name="03" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
-            </path>
-            <path>
-              <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Go SDK 1.11" type="20ee2d1f:SyntheticLibraryElementNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="crypto" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -197,7 +222,7 @@
     <frame x="0" y="34" width="1920" height="1045" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1547492" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15635005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -278,17 +303,45 @@
     <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/public/pics/f382716c1600421f127c7414a072016434fcd43a.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/main.go">
+    <entry file="file://$USER_HOME$/go/src/github.com/satori/go.uuid/generator.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+        <state relative-caret-position="290">
+          <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/go/src/github.com/satori/go.uuid/generator.go">
+    <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/04_upload-pictures/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="674">
-          <caret line="83" column="1" lean-forward="true" selection-start-line="83" selection-start-column="1" selection-end-line="83" selection-end-column="1" />
+        <state relative-caret-position="1104">
+          <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/13PhotoBlog/034_photo-blog/05_display-pictures/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/01/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="9" lean-forward="true" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/02/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="29" lean-forward="true" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/038_context/03/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="52" lean-forward="true" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="52" />
         </state>
       </provider>
     </entry>

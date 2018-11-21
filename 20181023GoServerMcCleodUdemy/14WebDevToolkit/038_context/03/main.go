@@ -9,6 +9,7 @@ import (
 )
 
 func main() {
+	fmt.Println("server started pt1")
 	http.HandleFunc("/", foo)
 	http.HandleFunc("/bar", bar)
 	http.Handle("/favicon.ico", http.NotFoundHandler())
