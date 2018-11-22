@@ -87,7 +87,7 @@ func main() {
 
 	//scrolling timer
 	for t := 0; t < 52; t++ {
-		timer:= time.NewTimer(time.Millisecond * 750)
+		timer:= time.NewTimer(time.Millisecond * 1000)
 		<- timer.C
 		//diplay vert or horiz
 		fmt.Print("\t\t\t", d[t])

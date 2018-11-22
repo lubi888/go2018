@@ -20,6 +20,8 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, req *http.Request) {
+	//split 1 txt into 3
+	t:= `toddy`
 	s := `<!DOCTYPE html>
 		<html lang="en">
 		<head>
@@ -28,9 +30,12 @@ func foo(w http.ResponseWriter, req *http.Request) {
 		</head>
 		<body>
 		You are at foo
-		</body>
+		`
+	u := `</body>
 		</html>`
 	w.Write([]byte(s))
+	w.Write([]byte(t))
+	w.Write([]byte(u))
 }
 
 func mshl(w http.ResponseWriter, req *http.Request) {
