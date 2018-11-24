@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"html/template"
 	"net/http"
-	//"./deck-unicode.go"
 )
 
 var suitU = [4]string{"\u2660", "\u2665", "\u2663", "\u2666"}

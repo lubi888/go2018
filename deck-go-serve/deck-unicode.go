@@ -21,9 +21,11 @@ func deck(w http.ResponseWriter, r *http.Request) {
 	uu := 24
 	y := 37
 	z := 50
+	//skip 2 blank cards at time
 	a = append(a[:s], a[s+2:]...)
 	a = append(a[:t], a[t+2:]...)
 	a = append(a[:u], a[u+2:]...)
+	//remove 4 'c' noble cards
 	a = append(a[:v], a[v+1:]...)
 	a = append(a[:uu], a[uu+1:]...)
 	a = append(a[:y], a[y+1:]...)
@@ -38,7 +40,6 @@ func deck(w http.ResponseWriter, r *http.Request) {
 		d[t] = string(a[t])
 	}
 	//fmt.Print(d, "\n\n")
-
 	//scrolling timer
 	//for t := 0; t < 52; t++ {
 	//	timer:= time.NewTimer(time.Millisecond * 750)
