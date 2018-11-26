@@ -1,15 +1,12 @@
 package main
 
-import (
-	"fmt"
-	"math/rand"
-	"time"
-)
+import "fmt"
 
 func main() {
 	//127136 is card back	183 a joker
 	x := 127137 //ascii    decimal
 	a := []int{}
+	colour := bool(false)
 	for i := x; i <= 127198; i++ {
 		a = append(a, i)
 	}
@@ -37,48 +34,34 @@ func main() {
 	//	fmt.Printf("%U\n", a[z])  //print unicode num  U+1F0DE
 	//	fmt.Printf("%#U\n", a[z]) //print unicode num + character    U+1F0DE '🃞'
 	//}
-	//
-	//fmt.Printf("%T\n", a[0])
-	//h := a[0]
-	//fmt.Println(h, "is h")
-	//j := fmt.Sprintf("%U", h)
-	//fmt.Println(j, "is j") //U+1F0A1
-	//fmt.Printf("%T\n", j)
-	//fmt.Println("\\U000"+j[2:], "and some") // Print \U000f554A
-	//k := fmt.Sprint("\"\\U000" + j[2:] + "\"")
-	//fmt.Println(k + " is also k") //"\U0001F0A1"
-	//fmt.Println(k)
-	//fmt.Println("\U0001F0A1 is just a number ")
-	//p := fmt.Sprintf("%#U", h)
-	//fmt.Println(p) //U+1F0A1 '🂡'
-	//p1 := fmt.Sprint(p[9:])
-	//fmt.Println(p1)
-	//
-	//display slice a with ints of decimal to unicode
-	//fmt.Println(a, "is a")
-	//c := []string{}
-	//fmt.Println(c, "empty c")
-	//fmt.Println(len(c))
-	//for z := 0; z <= 51; z++ {
-	//	//get unicode and then remove "U+9"
-	//	t5 := fmt.Sprintf("%#U", a[z])
-	//	t6 := fmt.Sprint(t5[9:])
-	//	c = append(c, t6)
+
+	//Give colour to cards
+	//struct { []a{int}, color true bool}
+	//127137 Ace Spades   -50
+	//127153 ace hearts		-66
+	//127169 ace diamonds	-82
+	//127185 ace trumps		-98
+
+	//Non-integer slice index z less... (Ctrl+F1)
+	//Inspection info: Reports invalid index and slice expression
+	//for z := [52]; z < 52; z++ {
+	//	if a[z] >127150 || a[z] <127185 {
+	//		colour = true
+	//	} else {
+	//		colour = false
+	//	}
 	//}
-	//fmt.Println(c)
+
 	//shuffle a slice
-	rand.Shuffle(52, func(i, j int) {
-		a[i], a[j] = a[j], a[i]
-	})
-	//fmt.Println(a)
-	//fmt.Printf("%T\n", a[3])
-	//e := string(a[4])
-	//fmt.Println(e)
-	//create new slice deck strings
-	d := [52]string{}
-	for t := 0; t < 52; t++ {
-		d[t] = string(a[t])
-	}
+	//rand.Shuffle(52, func(i, j int) {
+	//	a[i], a[j] = a[j], a[i]
+	//})
+	////create new slice deck strings
+	//d := [52]string{}
+	//for t := 0; t < 52; t++ {
+	//	d[t] = string(a[t])
+	//}
+
 	//print random deck slice
 	//fmt.Print(d, "\n\n")
 	//for y = 0; y < 52; y++ {
@@ -87,9 +70,21 @@ func main() {
 
 	//scrolling timer
 	for t := 0; t < 52; t++ {
-		timer:= time.NewTimer(time.Millisecond * 1000)
-		<- timer.C
+		//timer:= time.NewTimer(time.Millisecond * 1000)
+		//<- timer.C
 		//diplay vert or horiz
-		fmt.Print("\t\t\t", d[t])
+		//fmt.Print(a[t])
+		fmt.Print("\t", a[t])   //z[t]
+			//if a[z] >127150 && a[z] <127185 {
+			if a[t] >127137 && a[t] <127151 {
+				colour = true
+				fmt.Print(a[z])
+				fmt.Println(colour)
+			}	else {
+				colour = false
+				fmt.Print(a[z], colour, "\t")
+			}
+		//fmt.Print("\t", colour)
+		//fmt.Println()
 	}
 }

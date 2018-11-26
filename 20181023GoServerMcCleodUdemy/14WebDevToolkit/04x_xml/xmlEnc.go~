@@ -16,7 +16,7 @@ func main() {
         FirstName string   `xml:"name>first"`
         LastName  string   `xml:"name>last"`
         Age       int      `xml:"age"`
-        Months		string	`xml:"months"`
+        Months		string	`xml:"age>months"`
         Height    float32  `xml:"height,omitempty"`
         Married   bool
         Address
