@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf6ba864-4e79-4446-b49a-a0398ecd03d7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/041_ajax/01/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/041_ajax/01/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/041_ajax/01/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/041_ajax/01/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/041_ajax/02/01/templates/index.gohtml" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/14WebDevToolkit/041_ajax/02/01/templates/index.gohtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/05_mongodb/05_update-user-controllers-delete/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/05_mongodb/05_update-user-controllers-delete/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/05_mongodb/05_update-user-controllers-delete/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/05_mongodb/05_update-user-controllers-delete/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/06_hands-on/starting-code/controllers/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/06_hands-on/starting-code/controllers/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/06_hands-on/starting-code/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/06_hands-on/starting-code/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/06_hands-on/starting-code/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/06_hands-on/starting-code/models/user.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,13 +19,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/02_json/main.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="391">
-              <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+              <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/07_solution/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
               <folding>
-                <element signature="e#14#168#0" expanded="true" />
+                <element signature="e#14#226#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -116,16 +125,7 @@
               <item name="20181023GoServerMcCleodUdemy" type="462c0819:PsiDirectoryNode" />
               <item name="15MonGo" type="462c0819:PsiDirectoryNode" />
               <item name="046_mongodb" type="462c0819:PsiDirectoryNode" />
-              <item name="02_json" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="go2018" type="b2602c69:ProjectViewProjectNode" />
-              <item name="go2018" type="462c0819:PsiDirectoryNode" />
-              <item name="20181023GoServerMcCleodUdemy" type="462c0819:PsiDirectoryNode" />
-              <item name="15MonGo" type="462c0819:PsiDirectoryNode" />
-              <item name="046_mongodb" type="462c0819:PsiDirectoryNode" />
-              <item name="02_json" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
+              <item name="07_solution" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -160,7 +160,7 @@
     <frame x="0" y="34" width="1920" height="1045" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.22038421" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49945712" visible="true" weight="0.2230523" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.5005429" side_tool="true" weight="0.21771611" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -278,9 +278,15 @@
     <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/02_json/main.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
-          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/20181023GoServerMcCleodUdemy/15MonGo/046_mongodb/07_solution/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="e#14#168#0" expanded="true" />
+            <element signature="e#14#226#0" expanded="true" />
           </folding>
         </state>
       </provider>

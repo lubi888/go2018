@@ -3,15 +3,16 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/GoesToEleven/golang-web-dev/040_mongodb/06_hands-on/starting-code/models"
+	//"github.com/GoesToEleven/golang-web-dev/040_mongodb/06_hands-on/starting-code/models"
 	"github.com/julienschmidt/httprouter"
-	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
+	//"gopkg.in/mgo.v2"
+	//"gopkg.in/mgo.v2/bson"
 	"net/http"
 )
 
 type UserController struct {
-	session *mgo.Session
+	//session *mgo.Session
+	session - new uuid
 }
 
 func NewUserController(s *mgo.Session) *UserController {

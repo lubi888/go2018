@@ -3,7 +3,7 @@ package controllers
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/GoesToEleven/golang-web-dev/042_mongodb/05_mongodb/04_update-user-controllers-get/models"
+	"github.com/GoesToEleven/golang-web-dev/040_mongodb/06_hands-on/starting-code/models"
 	"github.com/julienschmidt/httprouter"
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
@@ -40,10 +40,8 @@ func (uc UserController) GetUser(w http.ResponseWriter, r *http.Request, p httpr
 		return
 	}
 
-	uj, err := json.Marshal(u)
-	if err != nil {
-		fmt.Println(err)
-	}
+	// Marshal provided interface into JSON structure
+	uj, _ := json.Marshal(u)
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusOK) // 200
@@ -55,14 +53,13 @@ func (uc UserController) CreateUser(w http.ResponseWriter, r *http.Request, _ ht
 
 	json.NewDecoder(r.Body).Decode(&u)
 
+	// create bson ID
 	u.Id = bson.NewObjectId()
 
+	// store the user in mongodb
 	uc.session.DB("go-web-dev-db").C("users").Insert(u)
 
-	uj, err := json.Marshal(u)
-	if err != nil {
-		fmt.Println(err)
-	}
+	uj, _ := json.Marshal(u)
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(http.StatusCreated) // 201
@@ -70,7 +67,21 @@ func (uc UserController) CreateUser(w http.ResponseWriter, r *http.Request, _ ht
 }
 
 func (uc UserController) DeleteUser(w http.ResponseWriter, r *http.Request, p httprouter.Params) {
-	// TODO: only write code to delete user
+	id := p.ByName("id")
+
+	if !bson.IsObjectIdHex(id) {
+		w.WriteHeader(404)
+		return
+	}
+
+	oid := bson.ObjectIdHex(id)
+
+	// Delete user
+	if err := uc.session.DB("go-web-dev-db").C("users").RemoveId(oid); err != nil {
+		w.WriteHeader(404)
+		return
+	}
+
 	w.WriteHeader(http.StatusOK) // 200
-	fmt.Fprint(w, "Write code to delete user\n")
+	fmt.Fprint(w, "Deleted user", oid, "\n")
 }
