@@ -1,4 +1,5 @@
 # A hello world example with Go
-FROM golang:1.8-onbuild
+#1.8-onbuild
+FROM golang:alpine     
 MAINTAINER tuddleymc@gmail.com
 
