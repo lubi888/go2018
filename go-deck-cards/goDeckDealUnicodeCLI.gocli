@@ -1,12 +1,15 @@
+//to run this on cli remove cli from .gocli
+//go run goDeckDealUnicodeCLI.go 
 package main
 
 import "fmt"
+import "time"
 
 func main() {
 	//127136 is card back	183 a joker
 	x := 127137 //ascii    decimal
 	a := []int{}
-	colour := bool(false)
+	// colour := bool(false)
 	for i := x; i <= 127198; i++ {
 		a = append(a, i)
 	}
@@ -29,11 +32,11 @@ func main() {
 	a = append(a[:z], a[z+1:]...)
 
 	//fmt.Println(len(a)) //length deck 52
-	//for z := 0; z < len(a); z++ {
-	//	fmt.Println(a[z])         //print a decimal   127194
-	//	fmt.Printf("%U\n", a[z])  //print unicode num  U+1F0DE
-	//	fmt.Printf("%#U\n", a[z]) //print unicode num + character    U+1F0DE '🃞'
-	//}
+	// for z := 0; z < len(a); z++ {
+	// 	fmt.Println(a[z])         //print a decimal   127194
+	// 	fmt.Printf("%U\n", a[z])  //print unicode num  U+1F0DE
+	// 	fmt.Printf("%#U\n", a[z]) //print unicode num + character    U+1F0DE '🃞'
+	// }
 
 	//Give colour to cards
 	//struct { []a{int}, color true bool}
@@ -70,20 +73,22 @@ func main() {
 
 	//scrolling timer
 	for t := 0; t < 52; t++ {
-		//timer:= time.NewTimer(time.Millisecond * 1000)
-		//<- timer.C
+		// card per second
+		timer:= time.NewTimer(time.Millisecond * 1000)
+		<- timer.C
 		//diplay vert or horiz
-		//fmt.Print(a[t])
-		fmt.Print("\t", a[t])   //z[t]
-			//if a[z] >127150 && a[z] <127185 {
-			if a[t] >127137 && a[t] <127151 {
-				colour = true
-				fmt.Print(a[z])
-				fmt.Println(colour)
-			}	else {
-				colour = false
-				fmt.Print(a[z], colour, "\t")
-			}
+		// fmt.Print(a[t])
+		fmt.Print("\t", string(a[t]))   //z[t]
+		// add colour to card deck
+		// 	//if a[z] >127150 && a[z] <127185 {
+		// 	if a[t] >127137 && a[t] <127151 {
+		// 		colour = true
+		// 		fmt.Print(a[z])
+		// 		fmt.Println(colour)
+		// 	}	else {
+		// 		colour = false
+		// 		fmt.Print(a[z], colour, "\t")
+		// 	}
 		//fmt.Print("\t", colour)
 		//fmt.Println()
 	}

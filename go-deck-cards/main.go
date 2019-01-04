@@ -24,12 +24,12 @@ func init() {
 
 func main() {
 	fmt.Println("setting server now")
-	http.HandleFunc("/", index)
+	http.HandleFunc("/", deck)
 	http.HandleFunc("/num", num)
 	http.HandleFunc("/card", card)
-	http.HandleFunc("/deck", deck)
+	http.HandleFunc("/deck", index)
 	http.Handle("/favicon.ico", http.NotFoundHandler())
-	http.ListenAndServe(":8080", nil)
+	http.ListenAndServe(":80", nil)
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
@@ -46,6 +46,8 @@ func card(w http.ResponseWriter, r *http.Request) {
 	cf = cardface{"ace", "diamonds"}
 	tpl.ExecuteTemplate(w, "index.gohtml", cf)
 }
+
+//func deck, see file deck-unicode.go
 
 //func deck(w http.ResponseWriter, r *http.Request) {
 //	//not working
